@@ -1,0 +1,216 @@
+<ion-header>
+    <ion-toolbar color="dark">
+       <ion-buttons slot="start" *ngIf="currenttab!='home'" (click)="changetab('home')">
+           <ion-button icon-only color="dark">
+                <ion-icon name="arrow-back" color="warning" ></ion-icon>
+            </ion-button>
+        </ion-buttons>      
+        <ion-title color="warning" center text-center>
+            Money money
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+    <div class="bigwin">
+
+    </div>
+    
+    <div class="game">
+
+        <div class="game1" *ngIf="currenttab=='home'">
+
+        <div class="logo">
+            <ion-img *ngFor="let item of plangame" [src]="item?'../../assets/icon/PIL.gif':'../../assets/icon/KORN.gif'"></ion-img>
+        </div>
+             
+        <div class="chooser1">
+                    <ion-item lines="none" color="dark">
+                   
+                                 <ion-label position="floating">setting</ion-label>
+                                 <ion-input type="text"></ion-input>
+                                 <ion-img slot="end" [src]="imgplan" (click)="changeplan()"></ion-img>
+                     </ion-item> 
+
+        </div>
+             
+          
+            
+        </div>
+ 
+        <div class="game1" *ngIf="currenttab=='otherlevel'">
+
+                <ion-grid center class="pin">
+        <ion-row center>
+            <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+            <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+            <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+            <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+            <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+            <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+            <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+            <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+            <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+            <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+        </ion-row>
+                </ion-grid>
+                     
+                <div class="chooser1">
+                   <ion-item lines="none" color="dark">
+                           
+                                         <ion-label position="floating">setting</ion-label>
+                                         <ion-input type="text"></ion-input>
+                                         
+                   </ion-item> 
+                   <ion-item lines="none" color="dark">
+                           
+                        <ion-label position="floating">level</ion-label>
+                        <ion-input type="text"></ion-input>
+                        
+  </ion-item> 
+                   <ion-item lines="none" color="dark">
+                   <label>single</label>
+                   <ion-toggle color="warning" disable="true"></ion-toggle>                
+                   </ion-item>
+                   <ion-grid center class="plan">
+                        <ion-row center>
+                            <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                            <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                            <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                            <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                            <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                            <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                            <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                            <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                            <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                            <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                         
+                           
+                        </ion-row>
+                                </ion-grid>
+                </div>
+                     
+                  
+                    
+        </div>
+
+        <div class="game1" *ngIf="currenttab=='jackpot'">
+
+                
+
+            <div class="jackoption">
+                    <ion-item lines="none" color="dark" center>
+                           
+                            <ion-title class="price" slot="start">200.000.000.000 $</ion-title>
+                            <ion-img slot="end" src="../../assets/icon/jackpot.png"></ion-img> 
+
+                    </ion-item>
+                    <ion-card center>
+                            <ion-title center text-center >option</ion-title>
+                    <ion-item lines="none" color="dark" center>
+                          <div class="lev">  <ion-title class="level" slot="start"> 4 </ion-title> <ion-img src="../../assets/icon/logogif.gif"> </ion-img> </div>   <ion-title class="mode" slot="end">single</ion-title>
+                    </ion-item> 
+                    </ion-card>
+            </div>
+            <ion-card>
+                    <ion-title center text-center >game</ion-title>
+                    <ion-grid class="pin" center>
+                            <ion-row center>
+                                    <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+                                    <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+                                    <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+                                    <ion-col width-10><ion-img src="../../assets/icon/logogif.gif"></ion-img></ion-col>
+                             </ion-row>
+                   </ion-grid> 
+            </ion-card>
+
+            <ion-card>
+                    <ion-title center text-center >plan</ion-title>
+            <ion-grid class="plan" center>
+            <ion-row center>
+                    <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                    <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                    <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                    <ion-col width-10 (click)="changeplan()"><ion-img [src]="imgplan" ></ion-img></ion-col>
+                    
+             </ion-row>
+            </ion-grid>          
+        </ion-card>     
+        </div>
+
+        <div class="pay" *ngIf="currenttab=='money'">
+
+            <ion-grid>
+                <ion-row>
+            <ion-col width-10>
+             <ion-card>
+                    <ion-card-content>
+                        
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+            <ion-col width-10>
+                    <ion-card>
+                        <ion-card-content>
+                            
+                        </ion-card-content>
+                    </ion-card>
+            </ion-col>
+            <ion-col width-10>
+                        <ion-card>
+                            <ion-card-content>
+                                
+                            </ion-card-content>
+                        </ion-card>
+            </ion-col>
+        </ion-row>
+            </ion-grid>
+
+        </div>
+
+        <div class="game_option" *ngIf="currenttab!='money' && currenttab!='jackpot'">
+
+                <ion-button (click)="changetab('otherlevel')" color="warning" class="button button-outline button-round button-full">
+                    <ion-label color="warning">
+                    other level
+                     </ion-label>
+                  </ion-button>  
+            
+              
+                  <ion-button (click)="changetab('money')" color="warning" class="button button-outline button-round button-full">
+                    <ion-label color="warning">
+                    try with money
+                     </ion-label>
+                  </ion-button>
+                  
+                  <ion-button (click)="changetab('jackpot')"  color="warning" class="button button-outline button-round button-full">
+                    <ion-label color="warning">
+                    jackpot 
+                     </ion-label>
+                     <ion-img class="jackpot" src="../../assets/icon/jackpot.png"></ion-img>
+                  </ion-button>  
+            
+        </div>  
+
+    </div>
+
+
+</ion-content>
+<ion-footer *ngIf="currenttab!='money'">
+    <ion-toolbar color="dark">
+        <ion-item lines="none" color="dark">
+            <ion-button slot="start" color="warning" class="button button-outline button-round">
+                <ion-label color="warning">
+                    566667777
+                  </ion-label>
+              </ion-button>
+              <ion-button slot="end" color="warning" class="button button-outline button-round">
+                <ion-label color="warning">
+                    PLAY
+                </ion-label>
+                <ion-icon name="play" olor="warning">
+                </ion-icon>
+              </ion-button>
+        </ion-item>
+    </ion-toolbar>
+</ion-footer>

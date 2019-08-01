@@ -1,0 +1,122 @@
+.welcome-card img {
+    max-height: 35vh;
+    overflow: hidden;
+}
+
+.logo ion-img {
+    border-radius: 100%;
+    margin: 0 auto;
+    width: 140px;
+    height: 130px;
+}
+
+
+.logo {
+    margin-top: 10%;
+}
+
+.mise {
+    border: solid 1px gold;
+    min-width: 100px;
+    border-radius: 10%;
+    padding-inline: 5%;
+}
+
+.mise ion-label {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.chooser1 ion-img {
+    float: rigth;
+    margin: 0 auto;
+    border-radius: 100%;
+    width: 30px;
+    height: 35px;
+    margin-top: 10%;
+}
+
+.chooser1 ion-label{
+    margin: 0 auto;
+}
+
+
+
+.chooser1 {
+    margin: 5%;
+    margin-top: 10%;
+    border-radius: 5%;
+    padding: 7%;
+    box-shadow: 0px 0px 2px 0px gold;
+}
+
+.chooser1 ion-input
+{
+    border-bottom: solid 1px rgba($color: gold, $alpha: 0.6);
+}
+
+.jackpot
+{
+    width: 20px;
+    height: 20px;
+    margin-inline: 6%;
+}
+
+.game_option ion-button
+{
+height: 50px;
+}
+
+.game_option 
+{
+display: flex;
+flex-direction: column;
+}
+
+ion-card
+{
+    box-shadow: 0px 0px 2px 0px gold;
+}
+.pay ion-card
+{
+    height: 80px;
+    min-width: 70px;
+}
+
+.pin ion-img
+{
+    width: 40px;
+    heigth: 40px;
+}
+.plan ion-img
+{
+    width:  15px;
+    heigth: 20px;
+}
+
+.jackoption ion-img
+{
+width: 25px;
+height:27px;
+}
+
+.jackoption ion-title
+{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.lev
+{
+    display: inline-flex;
+}
+.lev ion-img
+{
+margin-left:4px;
+}
+ion-toolbar ion-button ion-icon
+{
+    font-size: 20px;
+    font-weight:400;
+}
